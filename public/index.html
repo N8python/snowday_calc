@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snow Day Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body scroll="no">
+    <h1>Snow Day Calculator</h1>
+    <div class="centerContainer">
+    <p>Enter the number of snow days you've had this year:</p>
+    <input type="number" value="0" min="0" max="30" name="numSnowDays">
+    <p>Enter your school's leniency:</p>
+    <span id="schoolLeniencyVal"></span>
+    <input type="range" min="1" max="10" name="schoolLeniency">
+    <br>
+    <button type="submit">Submit</button>
+    </div>
+    <div class="loadingScreen">
+      <h1>Loading <i class="fa fa-spinner w3-spin"></i><h1>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/range-slider.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/snowfall.js"></script>
+  </body>
+</html>

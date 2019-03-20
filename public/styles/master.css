@@ -1,0 +1,92 @@
+body, html{
+  overflow: hidden;
+  background-color: #09b3bc;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  animation-name: toblue;
+  animation-duration: 1s;
+}
+
+h1 {
+  color: lightblue;
+  text-align: center;
+  font-size: 45px;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+p {
+  color: lightblue;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+span {
+  color: lightblue;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+.centerContainer {
+  width: 100%;
+  text-align: center;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+[name="numSnowDays"] {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 7px;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+[name="schoolLeniency"] {
+  width: 200px;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 200px;
+  height: 60px;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 7px;
+  background-color: lightblue;
+  color: rgb(7, 130, 163);
+  font-size: 25px;
+  border: 2px solid rgb(14, 96, 136);
+  transition: 0.5s;
+  animation-name: swing;
+  animation-duration: 1s;
+}
+
+button:hover {
+  background-color: rgb(14, 96, 136);
+  border-color: rgb(7, 130, 163);
+  color: lightblue;
+}
+@keyframes swing {
+  from {
+    opacity: 0;
+    margin-right: 300px
+  };
+  to {
+    opacity: 1;
+    margin-right: 0px;
+  };
+}
+
+@keyframes toblue {
+  from {
+    background-color: white;
+  };
+  to {
+    background-color: #09b3bc;
+  };
+}
